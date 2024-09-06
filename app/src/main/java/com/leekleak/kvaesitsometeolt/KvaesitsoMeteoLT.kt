@@ -123,7 +123,7 @@ class KvaesitsoMeteoLT : WeatherProvider(
 
     override suspend fun getWeatherData(location: WeatherLocation, lang: String?): List<Forecast> {
         return when (location) {
-            is WeatherLocation.Id -> getLocationForecasts(WeatherLocation.Id(location.id, location.name)) // Bug Workaround
+            is WeatherLocation.Id -> getLocationForecasts(location)
             else -> emptyList()
         }
     }

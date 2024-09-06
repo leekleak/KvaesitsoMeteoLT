@@ -3,7 +3,7 @@ agp = "8.5.2"
 commonsSuncalc = "3.11"
 kotlin = "2.0.0"
 kotlinxSerializationJson = "1.7.2"
-pluginSdk = "2.1.0"
+pluginSdk = "2.1.1"
 
 [libraries]
 commons-suncalc = { module = "org.shredzone.commons:commons-suncalc", version.ref = "commonsSuncalc" }
