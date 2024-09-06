@@ -1,0 +1,16 @@
+[versions]
+agp = "8.5.2"
+commonsSuncalc = "3.11"
+kotlin = "2.0.0"
+kotlinxSerializationJson = "1.7.2"
+pluginSdk = "2.1.0"
+
+[libraries]
+commons-suncalc = { module = "org.shredzone.commons:commons-suncalc", version.ref = "commonsSuncalc" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+plugin-sdk = { module = "de.mm20.launcher2:plugin-sdk", version.ref = "pluginSdk" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+

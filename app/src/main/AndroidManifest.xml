@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        tools:targetApi="35">
+
+        <meta-data
+            android:name="de.mm20.launcher2.plugin.label"
+            android:value="@string/plugin_package_name" />
+        <meta-data
+            android:name="de.mm20.launcher2.plugin.description"
+            android:value="@string/plugin_package_description" />
+        <meta-data
+            android:name="de.mm20.launcher2.plugin.author"
+            android:value="leekleak"/>
+
+        <provider
+            android:name=".KvaesitsoMeteoLT"
+            android:authorities="com.leekleak.kvaesitsometeolt"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="de.mm20.launcher2.action.PLUGIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </provider>
+
+    </application>
+
+</manifest>

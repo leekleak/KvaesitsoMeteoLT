@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MeteoLT</string>
+    <string name="plugin_package_name">Meteo.lt</string>
+    <string name="plugin_package_description">Provides data from Meteo.lt</string>
+</resources>
