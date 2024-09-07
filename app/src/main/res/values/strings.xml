@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">MeteoLT</string>
-    <string name="plugin_package_name">Meteo.lt</string>
+    <string name="app_name">Kvaesitso Meteo.lt Plugin</string>
+    <string name="plugin_name">Meteo.lt</string>
+    <string name="plugin_package_name">Meteo.lt Integration</string>
     <string name="plugin_package_description">Provides data from Meteo.lt</string>
 </resources>

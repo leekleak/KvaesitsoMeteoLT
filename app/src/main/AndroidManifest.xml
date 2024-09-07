@@ -21,7 +21,8 @@
         <provider
             android:name=".KvaesitsoMeteoLT"
             android:authorities="com.leekleak.kvaesitsometeolt"
-            android:exported="true">
+            android:exported="true"
+            android:label="@string/plugin_name">
             <intent-filter>
                 <action android:name="de.mm20.launcher2.action.PLUGIN" />
                 <category android:name="android.intent.category.DEFAULT" />
