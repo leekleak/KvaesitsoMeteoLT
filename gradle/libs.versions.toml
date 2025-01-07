@@ -1,16 +1,11 @@
-[versions]
-agp = "8.5.2"
-commonsSuncalc = "3.11"
-kotlin = "2.0.0"
-kotlinxSerializationJson = "1.7.2"
-pluginSdk = "2.1.1"
-
 [libraries]
-commons-suncalc = { module = "org.shredzone.commons:commons-suncalc", version.ref = "commonsSuncalc" }
-kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
-plugin-sdk = { module = "de.mm20.launcher2:plugin-sdk", version.ref = "pluginSdk" }
+commons-suncalc = { module = "org.shredzone.commons:commons-suncalc", version = "3.11"}
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.8.0" }
+plugin-sdk = { module = "de.mm20.launcher2:plugin-sdk", version = "2.1.1" }
+room-runtime = { module = "androidx.room:room-runtime", version = "2.6.1" }
 
 [plugins]
-android-application = { id = "com.android.application", version.ref = "agp" }
-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-application = { id = "com.android.application", version = "8.7.3" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version = "2.0.0" }
+
 
