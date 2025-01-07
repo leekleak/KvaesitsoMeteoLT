@@ -28,17 +28,6 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
 
-      - name: Sign APK
-        env:
-          KEYSTORE_PATH: ${{ secrets.KEYSTORE_PATH }}
-          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
-          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
-          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
-        run: |
-          ./gradlew assembleRelease
-          jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 -keystore $KEYSTORE_PATH app/build/outputs/apk/release/app-release-unsigned.apk $KEY_ALIAS
-          zipalign -v 4 app/build/outputs/apk/release/app-release-unsigned.apk app/build/outputs/apk/release/app-release.apk
-          
       - name: Upload APK
         uses: actions/upload-artifact@v4.5.0
         with:
